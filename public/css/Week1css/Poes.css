@@ -1,0 +1,63 @@
+body
+{
+    display: grid;
+
+    grid-template-columns: 45% 10% 45%;
+    grid-template-rows: 45% 10% 45%;
+}
+
+div
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.pp
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.pp2
+{
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+@media only screen and (max-width: 600px)
+{
+    body
+    {
+        background-image: url("/images/Poezenbordeel.jpg");
+    }
+    div
+    {
+        visibility: hidden;
+    }
+
+    .pp2
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .pp
+    {
+        grid-column-start: 3;
+        grid-column-end: 4;
+
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    }

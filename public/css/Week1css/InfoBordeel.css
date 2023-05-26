@@ -1,0 +1,23 @@
+body
+{
+    display: flex;
+}
+
+div
+{
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+@media only screen and (max-width: 600px)
+{
+    body
+    {
+        background-color: beige;
+    }
+
+    div
+    {
+        flex-direction: column-reverse;
+    }
+}
